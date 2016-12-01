@@ -9,7 +9,6 @@
 <meta name="description" content="">
 <meta name="keywords" content="">
 <script src="js/common/base.js"></script>
-<script src="js/common/fastclick.js"></script>
 <link href="css/common/common.css" rel="stylesheet">
 <link href="css/common/mobile-reset.css" rel="stylesheet">
 <link href="css/home.css" rel="stylesheet">
@@ -150,8 +149,9 @@
 <script src="js/common/Zepto.js"></script>
 <script src="js/common/touch.js"></script>
 <script src="js/home.js"></script>
+<script src="js/common/fastclick.js"></script>
 <script type="text/javascript">
-	$(function() { FastClick.attach(document.body);}); 
+	window.addEventListener( "load", function() {FastClick.attach( document.body );}, false );
 </script>
 </body>
 </html>
